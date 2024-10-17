@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Glory</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+	<header>
+  		<div class="logo-container">
+    	<img src="img/glory.jpg" alt="Logo de Glory">
+  		</div>
+	</header>
+
+	<br>
+
+	<div class="table-container">
+		<table id="tblData" class="tabla">
+			<thead>
+			  <tr>
+				<th>Completo</th>
+				<th>Part Number</th>
+				<th>Version</th>
+				<th>Serial Number</th>
+				<th>NCR Part Number</th>
+			  </tr>
+			</thead>
+			<tbody id="tbdy">
+			  <tr data-row="1">
+				<td id="columna1" class="focus" contenteditable="true" data-type="text" onkeypress="presskey(1,1)" type="text"></td>
+				<td id="columna2" contenteditable="true" data-type="text" onkeypress="presskey(1,2)" type="text"></td>
+				<td id="columna3" contenteditable="true" data-type="text" onkeypress="presskey(1,3)" type="text"></td>
+				<td id="columna4" contenteditable="true" data-type="text" onkeypress="presskey(1,4)" type="text"></td>
+				<td id="columna5" contenteditable="true" data-type="text" onkeypress="presskey(1,5)" type="text"></td>
+				<td class="celda-papelera"><button class="btn-delete-row" onclick="eliminarFila(this)"></button></td>  <!--botón de eliminar fila -->
+
+			  </tr>
+			</tbody>
+		  </table>		  
+	</div>
+
+	<br><br>
+
+
+
+	<script src="script.js"></script>
+	<script src="node_modules/xlsx/dist/xlsx.full.min.js"></script>
+
+	
+
+	<div class="boton-container">
+		<button class="btn" onclick="exportTableToExcel('tblData')">Exportar a Excel</button>
+	</div>
+	
+	<footer>
+			<p><a href="https://www.glory-global.com/" target="_blank">© Glory Global Solutions | 2023</a></p>
+ 	 </footer>
+  
+</body>
+
+</html>  

@@ -1,0 +1,164 @@
+header {
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    height: 100px; /* Set header height */
+    position: fixed; /* Fix header at the top */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Full width */
+    z-index: 999; /* Ensure header is on top */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    user-select: none; /* Disable text selection */
+}
+
+html, body {
+    height: 100%; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    position: absolute; /* Position logo container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center align */
+}
+
+.logo-container img {
+    max-height: 80px; /* Maximum height for logo */
+    display: block;
+}
+
+table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 80%; /* Set table width */
+    margin: 0 auto; /* Center table */
+}
+
+tr {
+    background-color: #EBEDEF; /* Set row background color */
+}
+
+td {
+    border: 1px solid #ddd; /* Set cell border */
+    padding: 8px; /* Set cell padding */
+    text-align: center; /* Center text */
+    vertical-align: middle; /* Middle align text */
+    width: calc((80% - 32px) / 5); /* Set cell width */
+}
+
+td:focus {
+    outline: none; /* Remove outline */
+    border: 2px solid #0e1787; /* Add focus border */
+    border-radius: 0;
+}
+
+td:last-child {
+    width: 32px; /* Fixed width for last cell */
+    user-select: none; /* Disable text selection */
+}
+
+th {
+    background-color: #0e1787; /* Set header background color */
+    color: white; /* Set header text color */
+    font-family: Arial;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 12px; /* Set header padding */
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease-in-out;
+    user-select: none; /* Disable text selection */
+}
+
+th:hover {
+    background-color: #005CA9; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    border-bottom: 2px solid #005CA9;
+}
+
+.table-container {
+    overflow-y: auto; /* Enable vertical scroll */
+    max-height: calc(100vh - 265px); /* Set max height */
+    margin-top: 40px;
+    width: 100%;
+    user-select: none; /* Disable text selection */
+}
+
+.boton-container {
+    position: absolute;
+    bottom: 50px; /* Distance from bottom */
+    margin-top: 0px;
+    user-select: none; /* Disable text selection */
+}
+
+.btn {
+    background-color: #0e1787; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Round corners */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px;
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.btn:hover {
+    background-color: #1b267d; /* Change background on hover */
+}
+
+footer {
+    background-color: #1b267d; /* Footer background color */
+    color: #fff; /* Footer text color */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    user-select: none; /* Disable text selection */
+}
+
+a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.btn-delete-row {
+    background-image: url('./img/papelera.png'); /* Set delete icon */
+    height: 32px; /* Set icon height */
+    width: 32px; /* Set icon width */
+    background-repeat: no-repeat;
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.btn-delete-row:hover {
+    transform: scale(1.1); /* Zoom on hover */
+}
+
+.celda-papelera {
+    border: none; /* Remove border */
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+}
