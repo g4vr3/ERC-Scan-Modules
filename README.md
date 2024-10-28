@@ -2,7 +2,8 @@
 
 This is a web application built with **HTML**, **CSS**, and **JavaScript** for managing and exporting data. The application supports **barcode** and **QR code** scanners (both **1D** and **2D**), which automatically populate the table fields upon scanning, creating new rows dynamically. It is made portable using **Node.js**.
 
-**Note:** This application was developed as a **base project** for a final production-ready solution and utilizes **fictitious and test barcode formats**. It was not deployed in production.
+> [!NOTE]
+> This application was developed as a **base project** for a final production-ready solution and utilizes **fictitious and test barcode formats**. It was not deployed in production.
 
 ## Key Features
 
